@@ -43,7 +43,7 @@ export default {
      methods:{
       getQRcode(){
     
-      axios.get('https://my--1.herokuapp.com/api/rest/qr-generator')
+      axios.get('https://qr-scan2.herokuapp.com/api/rest/qr-generator')
       .then((response)=>{
         this.QRValue=response.data;
         console.log(response.status);
@@ -59,7 +59,7 @@ export default {
 
       save(){
 
-      axios.post('https://my--1.herokuapp.com/api/rest/response')
+      axios.post('https://qr-scan2.herokuapp.com/api/rest/response')
       .then((response)=>{
 
 // let i = response.data;
